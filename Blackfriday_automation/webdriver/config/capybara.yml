@@ -1,0 +1,27 @@
+new-qa-phantom:
+  default_driver: :firefox
+  javascript_driver: :poltergeist
+  javascript: true
+  timeout: 15
+  app_host: http://localhost:8080/blackfriday/home.html
+
+new-qa-firefox:
+  default_driver: :firefox
+  javascript_driver: :poltergeist
+  javascript: false
+  timeout: 15
+  app_host: http://localhost:8080/blackfriday/home.html
+
+new-qa-chrome:
+  default_driver: :chrome
+  javascript_driver: :poltergeist
+  javascript: false
+  timeout: 15
+  app_host: http://localhost:8080/blackfriday/home.html
+
+new-qa-browserstack:
+  default_driver: :browserstack
+  javascript_driver: :browserstack
+  javascript: true
+  timeout: 15
+  app_host: http://localhost:8080/blackfriday/home.html
